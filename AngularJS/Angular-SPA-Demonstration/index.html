@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="Demo">
+    <head>
+        <title>welcome</title>
+        <meta chrset="UTF 8">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular-route.js"></script>
+        <script src="Scripts/script.js"></script>
+        <link href="Style.css" rel="stylesheet">
+        <base href="./" />
+        
+    </head>
+    <body>
+        <table style="font-family:Arial">
+            <tr>
+                <td colspan="2" class="header">
+                    <h1>
+                        website header
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td class="leftMenu">
+                    <a href="#!home">Home</a>
+                    <a href="#!courses">Courses</a>
+                    <a href="#!students">Students</a>
+                </td>
+                <td class="mainContent">
+                    <div ng-view><div>
+                </td>
+            </tr>
+            <tr>
+            <td colspan="2" class="footer">
+                <b>website footer</b>
+            </td>
+        </tr>
+        </table>
+    </body>
+</html>
